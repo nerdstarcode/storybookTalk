@@ -34,7 +34,7 @@ Esse comando também vai adicionar algumas histórias padronizadas para que voc�
 ```bash
   npm run storybook
 ```
-E ele vai te mostrar tudo lindo maravilhoso lá, ou não kkkk.
+E ele vai te mostrar tudo lindo maravilhoso lá, ou não.
 Quando fui adicionar ele no projeto levei uma pequena surra porque começou a me apitar um erro que acabei esquecendo de pegar, mas era algo relacionado com o node, dai tive que adicionar o cross-env no projeto:
 ```bash
   npm install --save-dev cross-env
@@ -43,15 +43,13 @@ Ir até o package.json e mudar o script do storybook para:
 ```json
   "storybook": "cross-env NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
 ```
-E ai sim rodar o run storybook que ele abriu tudo certinho pra mim. Demorei um pouco pra conseguir resolver isso a primeira vez kkk, fiquei meio triste me perguntei porque fui inventar de fazer isso e quando rodou fiquei feliz e falei ainda bem que deu isso comigo e eu resolvi, agora posso repassar kkk.
+E ai sim rodar o run storybook que ele abriu tudo certinho pra mim. Demorei um pouco pra conseguir resolver isso a primeira vez, fiquei meio triste me perguntei porque fui inventar de fazer isso e quando rodou fiquei feliz e falei ainda bem que deu isso comigo e eu resolvi, agora posso repassar.
 
-
- (Sim, tive que escrever tudo isso dessa forma mesmo se não eu travo na hora que estou falando, até mesmo os 'kkk')
 
 ### 1
 Bom, beleza, instalei, rodou e agora??
 
-Agora você começa o trabalho mesmo, se você estiver usando o Typescript vai te facilitar na parte da documentação do projeto, se não, sinto muito kkkk.
+Agora você começa o trabalho mesmo, se você estiver usando o Typescript vai te facilitar na parte da documentação do projeto, se não, sinto muito.
 
 Mas a ideia é simples, você vai montar seus componentes normalmente, e adicionar um outro arquivo que você vai fazer a documentação, esse arquivo por padrão vai receber o NomeDoComponente.stories.tsx(ou jsx, js, ts....) vai depender de como está seu projeto, e nele você vai importar o componente (e a interface se tiver com o TS), e ainda se estiver com o TS vai importar o Meta e StoryObj da lib do storybook.
 
